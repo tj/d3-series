@@ -313,16 +313,16 @@ export default class LineChart {
 
     // update
     point.transition().ease(ease)
-      .attr('x1', d => Math.max( x(d.time) - pointWidth, 0 ))
-      .attr('x2', d => Math.min( x(d.time) + pointWidth, w ))
+      .attr('x1', d => Math.max(x(d.time) - pointWidth, 0))
+      .attr('x2', d => Math.min(x(d.time) + pointWidth, w))
       .style('stroke-opacity', d => y(d.value))
 
 
     // enter
     point.enter().append('line')
       .attr('class', 'point')
-      .attr('x1', d => Math.max( x(d.time) - pointWidth, 0 ))
-      .attr('x2', d => Math.min( x(d.time) + pointWidth, w ))
+      .attr('x1', d => Math.max(x(d.time) - pointWidth, 0))
+      .attr('x2', d => Math.min(x(d.time) + pointWidth, w))
 
     // update
     point
