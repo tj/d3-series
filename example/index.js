@@ -50,19 +50,13 @@ class App extends Component {
     this.a = new Chart({
       target: this.refs.a,
       ease: 'ease-out',
-      xDomain: [new Date(new Date - 25 * 3600000)]
+      xDomain: [new Date(new Date - 25 * 3600000)],
+      height: 250
     })
 
     this.b = new Chart({
       target: this.refs.b,
-      ease: 'elastic'
-    })
-
-    this.c = new Chart({
-      target: this.refs.c,
       ease: 'elastic',
-      margin: { top: 25, right: 60, bottom: 50, left: 150 },
-      width: 750,
       height: 250
     })
 

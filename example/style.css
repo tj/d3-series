@@ -88,8 +88,14 @@ p {
 
 .chart .label {
   font: 10px sans-serif;
-  text-anchor: end;
-  alignment-baseline: middle;
+}
+
+.chart .x.axis {
+  transition: all 200ms;
+}
+
+.chart:hover .x.axis {
+  opacity: 0;
 }
 
 .chart .value {
