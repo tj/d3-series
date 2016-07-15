@@ -1,6 +1,6 @@
 {
   "name": "d3-series",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "D3 line series",
   "author": "TJ Holowaychuk <tj@tjholowaychuk.com>",
   "main": "build/index.js",
