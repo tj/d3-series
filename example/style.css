@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px 0 0 0;
+  font: 15px/1.6 Helvetica, Arial, sans-serif;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  padding: 75px;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+.dark {
+  background: #1C2023;
+  color: white;
+}
+
+#actions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: white;
+}
+
+.chart {
+  /*border: 1px dotted #ddd;*/
+}
+
+.chart .bg {
+  stroke: #E6EDF4;
+  stroke-width: 2;
+}
+
+.chart.dark .bg {
+  stroke: #282b2e;
+}
+
+.chart.dark text {
+  fill: #7E899B;
+}
+
+.chart.dark .details .x {
+  stroke: rgba(255,255,255,.1);
+}
+
+.chart .point {
+  stroke: red;
+  stroke-width: 2;
+}
+
+.chart .series.success .point {
+  stroke: #0bbbe2;
+  /*-webkit-filter: drop-shadow( -5px -5px 5px red );
+   filter: drop-shadow( -5px -5px 5px red );*/
+}
+
+.chart .series.client .point {
+  stroke: #F12E65;
+}
+
+.chart .series.server .point {
+  stroke: #F12E65;
+}
+
+.chart .series.net .point {
+  stroke: #F12E65;
+}
+
+.chart .label {
+  font: 10px sans-serif;
+  text-anchor: end;
+  alignment-baseline: middle;
+}
+
+.chart .value {
+  font: 10px sans-serif;
+  text-anchor: start;
+  alignment-baseline: middle;
+}
+
+.chart .details .x {
+  stroke: rgb(245, 245, 245);
+  stroke-width: 3px;
+}
+
+.chart .details .time {
+  font: 10px sans-serif;
+  alignment-baseline: hanging;
+  text-anchor: middle;
+}
+
+.chart .axis text {
+  font: 9px sans-serif;
+}
+
+.chart .axis path,
+.chart .axis line {
+  fill: none;
+  stroke: RGB(230, 237, 244);
+  stroke-width: 1px;
+  stroke-dasharray: 1,2;
+  shape-rendering: crispEdges;
+}
+
+.chart .axis path {
+  display: none;
+}
+
+.chart.dark .axis path,
+.chart.dark .axis line {
+  stroke: #282b2e;
+}

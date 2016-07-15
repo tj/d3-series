@@ -1,0 +1,30 @@
+{
+  "name": "d3-series",
+  "version": "0.1.0",
+  "description": "D3 line series",
+  "author": "TJ Holowaychuk <tj@tjholowaychuk.com>",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prepublish": "make build"
+  },
+  "keywords": [
+    "d3",
+    "line",
+    "chart"
+  ],
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "react-fatigue-dev": "github:tj/react-fatigue-dev#704f778"
+  },
+  "dependencies": {
+    "d3": "^3.5.16"
+  },
+  "files": [
+    "build"
+  ]
+}
